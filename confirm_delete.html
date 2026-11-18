@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="card p-4" style="max-width:550px"><h3>تأكيد الحذف</h3><p>هل تريد حذف الدواء: <b>{{ object.name }}</b>؟</p><form method="post">{% csrf_token %}<button class="btn btn-danger">نعم، احذف</button> <a class="btn btn-light" href="{% url 'medicine_list' %}">إلغاء</a></form></div>{% endblock %}
